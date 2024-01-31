@@ -86,3 +86,24 @@ export const socials = [
     url: '/facebook.svg',
   },
 ];
+
+
+export const navItems = [
+  {
+    id: '',
+    imgUrl: '',
+    title: 'Jobs',
+  },
+  {
+    id: '',
+    imgUrl: '',
+    title: 'experience',
+  },{
+    id: '',
+    imgUrl: '',
+    title: 'about',
+  },{
+    id: '',
+    imgUrl: '',
+    title: 'contact',
+  },]
