@@ -12,24 +12,29 @@ const Hero = () => (
     whileInView='show'
     viewport={{once :false, amount:0.25}}
     className={`${styles.innerWidth} mx-auto flex flex-col`}>
-      <div className='flex justify-center items-center flex-col relative z-10'>
+      <div className='flex justify-center items-start flex-col relative z-10'>
 
-        <motion.h1 
+      <motion.h1
+        variants={textVariant(1.05)}
+        className=' lg:text-[30px] md:text-[20px] sm:text-[15px] text-[30px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px]  text-[#8892b0] sm:h-[30] h-[60px]'>
+          Hi, I'm
+        </motion.h1>
+
+        <motion.h1
         variants={textVariant(1.1)}
-        className={styles.heroHeading}>
-          Metaverse
+        className={`${styles.heroHeading} h-[60px] `}>
+          Parmida shoeibzade.
         </motion.h1>
 
         <motion.div
         variants={textVariant(1.2)}
-        className='flex flex-row justify-center items-center'>
-          <h1 className={styles.heroHeading}>Ma</h1>
-          <div className={styles.heroDText}/>
-          <h1 className={styles.heroHeading}>Ness</h1>
+        className='flex flex-row justify-center pb-50'>
+          <h1 className={`${styles.heroHeading} text-[#8892b0]`}>I build wonderful websites</h1>
         </motion.div>
 
       </div>
-      <motion.div 
+
+      {/* <motion.div
       variants={slideIn('right', 'tween', 0.2 ,1 )}
       className='relative w-full md:-mt-[20px] -mt-[12px]'>
 
@@ -47,8 +52,8 @@ const Hero = () => (
               className='sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain'/>
             </div>
           </a>
-          
-      </motion.div>
+
+      </motion.div> */}
     </motion.div>
   </section>
 );
