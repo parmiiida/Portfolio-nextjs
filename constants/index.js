@@ -1,3 +1,5 @@
+import { rickandmorty , travelapp , promptopia, metaversus } from "../public";
+
 export const exploreWorlds = [
   {
     id: 'world-1',
@@ -90,20 +92,69 @@ export const socials = [
 
 export const navItems = [
   {
-    id: '',
+    id: 'about',
     imgUrl: '',
-    title: 'Jobs',
+    title: 'About',
   },
   {
-    id: '',
+    id: 'projects',
     imgUrl: '',
-    title: 'experience',
+    title: 'Projects',
   },{
-    id: '',
+    id: 'contact',
     imgUrl: '',
-    title: 'about',
-  },{
-    id: '',
-    imgUrl: '',
-    title: 'contact',
-  },]
+    title: 'Contact',
+  }]
+
+  export const listItems = [
+    "JavaScript",
+    "React.js",
+    "TailwindCSS",
+    "Next.js",
+    "HTML",
+    "TypeScript"
+  ];
+
+  export const projects = [
+    {
+      github : 'https://github.com/parmiiida/promptopia',
+      image: promptopia,
+      title: 'promptopia',
+      tech: [
+        "API",
+        "sdf",
+        "sdf",
+        "sdf",
+      ]
+    },
+    {
+      github : 'https://github.com/parmiiida/rick-morty',
+      image: rickandmorty,
+      title: 'rickandmorty',
+      tech: [
+        "API",
+        "sdf",
+        "sdf",
+        "sdf",
+      ]
+    },{
+      github : 'https://github.com/parmiiida/travel-app',
+      image: travelapp,
+      title: 'travelapp',
+      tech: [
+        "API",
+        "sdf",
+        "sdf",
+        "sdf",
+      ]
+    },{
+      github : 'https://github.com/parmiiida/Metaversus',
+      image: metaversus,
+      title: 'metaversus',
+      tech: [
+        "API",
+        "sdf",
+        "sdf",
+        "sdf",
+      ]
+    }]
