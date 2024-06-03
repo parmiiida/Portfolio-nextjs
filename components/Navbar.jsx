@@ -10,6 +10,7 @@ import Link from 'next/link';
 
 const Navbar = () => {
 
+  const[active ,setActive] = useState('')
   const [hidden, setHidden] = useState(false)
   const {scrollY} = useScroll()
   useMotionValueEvent(scrollY, "change" ,(latest) => {
@@ -37,17 +38,33 @@ const Navbar = () => {
       <div
         className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
       >
-        <img
+      <Link href='/'
+        className="flex items-center gap-2"
+        onClick={() =>{
+          //where are we currently
+          setActive('')
+          //scroll to the top of the page
+          window.scrollTo(0 ,0)
+        }}>
+          <img
           src="/search.svg"
           alt="search"
-          className="w-[24px] h-[24px] object-contain"
+          className="w-[24px] h-[24px] object-contain cursor-pointer"
         />
+      </Link>
 
-        <ul className="lg:flex gap-5 text-1xl text-white hidden">
-          {navItems.map((item ) => (
-            <li key={item.title}
-              className='"w-[24px] h-[24px] object-contain'>
-                <Link href='/'>{item.title}</Link>
+
+        <ul className="list-none hidden sm:flex flex-row gap-10">
+          {navItems.map((item) => (
+            <li className={`${
+              active === item.title
+              ?'text-[#cc4545]'
+              :'text-white'
+            } hover:text-[#818ba8] text-[18px] font-medium cursor-pointer`}
+            onClick={() => (
+              setActive(item.title)
+            )}>
+              <Link href={`#${item.id}`}>{item.title}</Link>
             </li>
           ))}
         </ul>
