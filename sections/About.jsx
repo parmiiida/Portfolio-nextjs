@@ -7,7 +7,7 @@ import{ listItems } from '../constants'
 const About= () => (
   <section className={`${styles.paddings} md:mx-15 lg:mx-32 relative z-10`} id='about'>
 
-    <div className={`flex mx-auto gap-5 lg:leading-[150px] md:leading-[60px] sm:leading-[74.4px] leading-[50px]`}>
+    <div className={`flex ${styles.innerWidth} mx-auto gap-5 lg:leading-[150px] md:leading-[60px] sm:leading-[74.4px] leading-[50px]`}>
       <div className=" flex gap-4 ">
         <span className='lg:text-[30px] text-bold font-bold sm:text-[17px] text-[23px]  mx-auto  text-[#8892b0] sm:h-[20]'>02.  </span>
         <p className="flex flex-1 lg:text-[35px] sm:text-[20px] text-[30px] mx-auto md:text-[33px]  text-white sm:h-[30] ">

@@ -71,22 +71,18 @@ export const insights = [
 ];
 
 export const socials = [
-  {
-    name: 'twitter',
-    url: '/twitter.svg',
-  },
+
   {
     name: 'linkedin',
     url: '/linkedin.svg',
+    link:' https://www.linkedin.com/in/parmidashoeibzadeh-b6aa37266/'
   },
   {
-    name: 'instagram',
-    url: '/instagram.svg',
+    name: 'github',
+    url: '/github.png',
+    link:'https://github.com/parmiiida'
   },
-  {
-    name: 'facebook',
-    url: '/facebook.svg',
-  },
+
 ];
 
 
@@ -118,43 +114,48 @@ export const navItems = [
   export const projects = [
     {
       github : 'https://github.com/parmiiida/promptopia',
-      image: promptopia,
+      image: '/promptopia.png',
       title: 'promptopia',
-      tech: [
-        "API",
-        "sdf",
-        "sdf",
-        "sdf",
+      website:'',
+      description: 'Develop a Next.js application that highlights the key features of Next.js along with a comprehensive CRUD AI Prompt sharing system utilizing a MongoDB database and implementing NextAuth authentication.',
+      techs: [
+        "Next.js",
+        "MongoDB",
+        "NextAuth",
+        "TailwindCSS",
       ]
     },
     {
       github : 'https://github.com/parmiiida/rick-morty',
-      image: rickandmorty,
+      image: "/rickandmorty.png",
       title: 'rickandmorty',
-      tech: [
-        "API",
-        "sdf",
-        "sdf",
-        "sdf",
+      website:'https://rick-morty-iota-teal.vercel.app',
+      description: 'developed a website which fetches data witch reactQuery from a specific database , manages data like saving or deleting data using Redux and well-designed by tailwind css',
+      techs: [
+        "React.js",
+        "Redux",
+        "ReactQuery",
+        "tailwind Css"
       ]
     },{
       github : 'https://github.com/parmiiida/travel-app',
-      image: travelapp,
+      image: '/travel_app.png',
       title: 'travelapp',
-      tech: [
-        "API",
-        "sdf",
-        "sdf",
-        "sdf",
+      website:'https://travel-app-chi-six.vercel.app/',
+      description: "Built with Next.js, TailwindCSS, and TypeScript, this landing page not only looks great but also serves as a hands-on project to reinforce one's understanding of these technologies.",
+      techs: [
+        "Next.js",
+        "Tailwind CSS",
       ]
     },{
       github : 'https://github.com/parmiiida/Metaversus',
-      image: metaversus,
+      image: '/metaversus.png',
       title: 'metaversus',
-      tech: [
-        "API",
-        "sdf",
-        "sdf",
-        "sdf",
+      website:'https://metaversus-pi-six.vercel.app/',
+      description: 'created a modern UI/UX design website showcases my abilities in creating well-designed animated websites',
+      techs: [
+        "Next.js",
+        "Framer motion",
+        "Tailwind CSS",
       ]
     }]

@@ -30,7 +30,7 @@ const Hero = () => (
         <motion.div
         variants={textVariant(0.2)}
         className='flex flex-row justify-center pb-50'>
-          <h1 className={`${styles.heroHeading} text-[#818ba8]`}>I build wonderful websites</h1>
+          <h1 className={`${styles.heroHeading} text-[#818ba8] `}>I build wonderful websites</h1>
         </motion.div>
 
       </div>
