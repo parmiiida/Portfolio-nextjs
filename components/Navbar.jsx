@@ -54,7 +54,7 @@ const Navbar = () => {
       </Link>
 
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden  md:flex flex-row gap-10">
           {navItems.map((item) => (
             <li className={`${
               active === item.title
@@ -68,7 +68,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <Image src='/menu.svg' alt="menu" width={32} height={32} className="inline-block lg:hidden cursor-pointer"/>
+        <Image src='/menu.svg' alt="menu" width={32} height={32} className="inline-block md:hidden cursor-pointer"/>
       </div>
     </motion.nav>
   )};
