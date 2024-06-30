@@ -11,5 +11,4 @@ I transform a Figma design into a fully functioning website using Next13 , fully
 
 💻[Live on](https://metaversus-pi-six.vercel.app/)
 
-
-![Uploading Screenshot (3).png…]()
+![Screenshot (3)](https://github.com/parmiiida/Metaversus/assets/130662273/579c3afb-9911-4a68-8fee-6f7425e73412)
