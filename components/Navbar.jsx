@@ -1,77 +1,70 @@
 'use client';
 
-import { motion ,useScroll ,useMotionValueEvent} from 'framer-motion';
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useState } from 'react';
-import styles from '../styles';
-import { navVariants } from '../utils/motion';
-import { navItems } from '../constants';
+import { Link as ScrollLink } from 'react-scroll';
 import Image from 'next/image';
-import Link from 'next/link';
+import styles from '../styles';
 
 const Navbar = () => {
+  const [hidden, setHidden] = useState(false);
+  const { scrollY } = useScroll();
 
-  const[active ,setActive] = useState('')
-  const [hidden, setHidden] = useState(false)
-  const {scrollY} = useScroll()
-  useMotionValueEvent(scrollY, "change" ,(latest) => {
+  useMotionValueEvent(scrollY, 'change', (latest) => {
     const previous = scrollY.getPrevious();
-    // if latest value be greater than previous value it means that we are scrolling down
-    if (latest > previous){
-      setHidden(true)
-    }else{
-      setHidden(false)
+    if (latest > previous) {
+      setHidden(true);
+    } else {
+      setHidden(false);
     }
-  })
+  });
 
-  return(
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // Ensure the path to your resume is correct
+    link.download = 'resume.pdf';
+    link.click();
+  };
+
+  return (
     <motion.nav
       variants={{
-        visible:{ y:0 },
-        hidden:{ y:"-100%" }
-
+        visible: { y: 0 },
+        hidden: { y: '-100%' },
       }}
-      className={`${styles.xPaddings} py-8 relative translateY(-100%)`}
-      animate={hidden ? "hidden" : "visible"}
-      transition={{duration: 0.35, ease:"easeInOut"}}
+      initial="visible"
+      animate={hidden ? 'hidden' : 'visible'}
+      transition={{ duration: 0.35, ease: 'easeInOut' }}
+      className={`${styles.xPaddings} py-8 relative`}
     >
       <div className="absolute w-[50%] inset-0 gradient-01" />
-      <div
-        className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
-      >
-      <Link href='/'
-        className="flex items-center gap-2"
-        onClick={() =>{
-          //where are we currently
-          setActive('')
-          //scroll to the top of the page
-          window.scrollTo(0 ,0)
-        }}>
-          <img
-          src="/search.svg"
-          alt="search"
-          className="w-[24px] h-[24px] object-contain cursor-pointer"
-        />
-      </Link>
-
-
-        <ul className="list-none hidden  md:flex flex-row gap-10">
-          {navItems.map((item) => (
-            <li className={`${
-              active === item.title
-              ?'text-[#cc4545]'
-              :'text-white'
-            } hover:text-[#818ba8] text-[18px] font-medium cursor-pointer`}
-            onClick={() => (
-              setActive(item.title)
-            )}>
-              <Link href={`#${item.id}`}>{item.title}</Link>
-            </li>
-          ))}
-        </ul>
-        <Image src='/menu.svg' alt="menu" width={32} height={32} className="inline-block md:hidden cursor-pointer"/>
+      <div className={`${styles.innerWidth}  mx-auto flex justify-between gap-8`}>
+        <ScrollLink
+          to="top"
+          smooth={true}
+          duration={500}
+          offset={-80} // Adjust this value to match the height of your navbar
+          className="flex items-center gap-2 cursor-pointer"
+        >
+          {/* <Image src="/logoo.svg" alt="search" width={54} height={24} className="object-contain" /> */}
+        </ScrollLink>
+        <div className="flex flex-row gap-10">
+          <ScrollLink
+            to="contact"
+            smooth={true}
+            duration={500}
+            offset={-80} // Adjust this value to match the height of your navbar
+            className="text-white hover:text-[#818ba8] text-[18px] font-medium cursor-pointer"
+          >
+            Contact
+          </ScrollLink>
+          <button onClick={handleDownload} className="text-white hover:text-[#818ba8] text-[18px] font-medium cursor-pointer">
+            Resume
+          </button>
+        </div>
       </div>
     </motion.nav>
-  )};
+  );
+};
 
 export default Navbar;
-

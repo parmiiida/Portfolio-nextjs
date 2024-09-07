@@ -16,7 +16,7 @@ const Contact = () => {
   console.log('Rendering Contact');
 
   return (
-    <section className={`${styles.paddings} relative z-10`}>
+    <section className={`${styles.paddings} relative z-10`} id='contact'>
       {isClient && <ContactForm />}
     </section>
   );

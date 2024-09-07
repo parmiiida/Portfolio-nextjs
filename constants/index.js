@@ -75,7 +75,7 @@ export const socials = [
   {
     name: 'linkedin',
     url: '/linkedin.svg',
-    link:' https://www.linkedin.com/in/parmidashoeibzadeh-b6aa37266/'
+    link:' https://www.linkedin.com/in/parmida-shoeibzadeh-11a109327/'
   },
   {
     name: 'github',
@@ -112,19 +112,19 @@ export const navItems = [
   ];
 
   export const projects = [
-    {
-      github : 'https://github.com/parmiiida/promptopia',
-      image: '/promptopia.png',
-      title: 'promptopia',
-      website:'',
-      description: 'Develop a Next.js application that highlights the key features of Next.js along with a comprehensive CRUD AI Prompt sharing system utilizing a MongoDB database and implementing NextAuth authentication.',
-      techs: [
-        "Next.js",
-        "MongoDB",
-        "NextAuth",
-        "TailwindCSS",
-      ]
-    },
+    // {
+    //   github : 'https://github.com/parmiiida/promptopia',
+    //   image: '/promptopia.png',
+    //   title: 'promptopia',
+    //   website:'',
+    //   description: 'Develop a Next.js application that highlights the key features of Next.js along with a comprehensive CRUD AI Prompt sharing system utilizing a MongoDB database and implementing NextAuth authentication.',
+    //   techs: [
+    //     "Next.js",
+    //     "MongoDB",
+    //     "NextAuth",
+    //     "TailwindCSS",
+    //   ]
+    // },
     {
       github : 'https://github.com/parmiiida/rick-morty',
       image: "/rickandmorty.png",
@@ -141,7 +141,7 @@ export const navItems = [
       github : 'https://github.com/parmiiida/travel-app',
       image: '/travel_app.png',
       title: 'travelapp',
-      website:'https://travel-app-chi-six.vercel.app/',
+      website:'https://travel-app-chi-six.vercel.app',
       description: "Built with Next.js, TailwindCSS, and TypeScript, this landing page not only looks great but also serves as a hands-on project to reinforce one's understanding of these technologies.",
       techs: [
         "Next.js",

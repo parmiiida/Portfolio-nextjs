@@ -18,7 +18,7 @@ const Footer = () => (
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />
         <div className="flex items-center justify-between flex-wrap gap-4">
           <p className="font-normal text-[14px] text-white opacity-50">
-            Designed & Built by Parmida Shoeibzade
+            Designed & Built by  | Parmida Shoeibzade |
           </p>
           <div className="flex gap-4">
             {socials.map((social) => (
