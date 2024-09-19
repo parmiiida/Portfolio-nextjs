@@ -6,7 +6,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: ''
+    message: '',
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState('');
@@ -19,7 +19,7 @@ const ContactForm = () => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
 
@@ -30,7 +30,7 @@ const ContactForm = () => {
       'service_fmmf9le', // Replace with your service ID
       'template_c5wcvcv', // Replace with your template ID
       formData,
-      'QNjfNYYZuDZF1s6rT' // Replace with your user ID
+      'QNjfNYYZuDZF1s6rT', // Replace with your user ID
     ).then((response) => {
       console.log('SUCCESS!', response.status, response.text);
       setIsSubmitted(true);
@@ -62,7 +62,7 @@ const ContactForm = () => {
               <input
                 type="text"
                 name="name"
-                placeholder='John Smith'
+                placeholder="John Smith"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -77,7 +77,7 @@ const ContactForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                placeholder='username@gmail.com'
+                placeholder="username@gmail.com"
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               />
             </div>
@@ -87,7 +87,7 @@ const ContactForm = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder='Please write me a message!'
+                placeholder="Please write me a message!"
                 required
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 rows="4"

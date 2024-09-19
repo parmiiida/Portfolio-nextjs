@@ -1,5 +1,6 @@
+import React from 'react';
 import { Footer, Navbar } from '../components';
-import { Projects, About, Hero ,Contact} from '../sections';
+import { Projects, About, Hero, Contact } from '../sections';
 
 const Home = () => (
   <div className="bg-primary-black overflow-hidden">
@@ -10,7 +11,7 @@ const Home = () => (
     </div>
     <div className="relative">
       <Projects />
-      <Contact/>
+      <Contact />
     </div>
     <Footer />
   </div>

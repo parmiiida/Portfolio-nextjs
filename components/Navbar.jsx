@@ -3,7 +3,6 @@
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import Image from 'next/image';
 import styles from '../styles';
 
 const Navbar = () => {
@@ -38,10 +37,10 @@ const Navbar = () => {
       className={`${styles.xPaddings} py-8 relative`}
     >
       <div className="absolute w-[50%] inset-0 gradient-01" />
-      <div className={`${styles.innerWidth}  mx-auto flex justify-between gap-8`}>
+      <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
         <ScrollLink
           to="top"
-          smooth={true}
+          smooth
           duration={500}
           offset={-80} // Adjust this value to match the height of your navbar
           className="flex items-center gap-2 cursor-pointer"
@@ -51,14 +50,18 @@ const Navbar = () => {
         <div className="flex flex-row gap-10">
           <ScrollLink
             to="contact"
-            smooth={true}
+            smooth
             duration={500}
             offset={-80} // Adjust this value to match the height of your navbar
             className="text-white hover:text-[#818ba8] text-[18px] font-medium cursor-pointer"
           >
             Contact
           </ScrollLink>
-          <button onClick={handleDownload} className="text-white hover:text-[#818ba8] text-[18px] font-medium cursor-pointer">
+          <button
+            type="button"
+            onClick={handleDownload}
+            className="text-white hover:text-[#818ba8] text-[18px] font-medium cursor-pointer"
+          >
             Resume
           </button>
         </div>

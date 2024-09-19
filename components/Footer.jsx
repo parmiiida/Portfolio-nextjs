@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import Image from 'next/image';
 import { socials } from '../constants';
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
-import Link from 'next/link';
-import Image from 'next/image';
 
 const Footer = () => (
   <motion.footer
@@ -18,7 +18,7 @@ const Footer = () => (
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />
         <div className="flex items-center justify-between flex-wrap gap-4">
           <p className="font-normal text-[14px] text-white opacity-50">
-            Designed & Built by  | Parmida Shoeibzade |
+            Designed & Built by | Parmida Shoeibzade |
           </p>
           <div className="flex gap-4">
             {socials.map((social) => (
@@ -31,7 +31,7 @@ const Footer = () => (
               >
                 <Image
                   width={30}
-                  height={10}
+                  height={30} // Adjusted height to maintain aspect ratio
                   src={social.url}
                   alt={social.name}
                   className="object-contain"
@@ -46,4 +46,3 @@ const Footer = () => (
 );
 
 export default Footer;
-
