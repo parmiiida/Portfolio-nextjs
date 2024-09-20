@@ -5,7 +5,7 @@ import styles from '../styles';
 import {  staggerContainer, textVariant } from '../utils/motion'
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} mx-[70px] sm:pl-16 pl-6`}>
+  <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
 
 
     <motion.div variants={staggerContainer}
@@ -23,7 +23,7 @@ const Hero = () => (
 
         <motion.h1
         variants={textVariant(0.1)}
-        className={`${styles.heroHeading} h-[60px] `}>
+        className={`${styles.heroHeading} h-[auto] `}>
           Parmida shoeibzade.
         </motion.h1>
 
@@ -35,7 +35,7 @@ const Hero = () => (
 
       </div>
 
-      <div className='flex-1 max-w-[700px] font-normal text-[18px] text-[#B0B0B0] leading-[30px]'>
+      <div className='flex-1 max-w-[700px] mx-[10px] font-normal text-[18px] text-[#B0B0B0] leading-[30px]'>
       I am a skilled frontend developer who has come through the development journey by myself, driven by my love and patience for creating wonderful websites.
       I am open to every idea that can lead to wonderful websites, challenge my knowledge and ability, and help me improve day by day.
       </div>

@@ -34,8 +34,8 @@ const About= () => (
           </p>
           <p  className='flex-1 font-normal text-[18px] text-[#B0B0B0] leading-[30px]'>Here are a few <span className='text-[#8892b0]'>technologies</span> I’ve been working with recently:</p>
         </div>
-        <div className='max-w-[300px]  flex flex-col flex-1 items-center font-normal mt-7 ml-24 text-[#B0B0B0]'>
-          <ul className='list-disc grid grid-cols-3 gap-x-9 gap-y-2'>
+        <div className='max-w-[300px]  flex flex-col flex-1 items-center font-normal mt-7 mx-[26px] text-[#B0B0B0]'>
+          <ul className='list-disc grid grid-cols-3 gap-x-9  gap-y-2'>
             {listItems.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
