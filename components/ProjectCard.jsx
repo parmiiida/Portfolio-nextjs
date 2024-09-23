@@ -48,7 +48,7 @@ const ProjectCard = () => (
                     className="w-full h-full justify-start"
                   />
                 </a>
-                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                <a href={project.website} target="_blank" rel="noopener noreferrer">
                   <img
                     src="/external-link.png"
                     alt="external link"

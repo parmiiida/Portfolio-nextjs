@@ -151,7 +151,7 @@ export const navItems = [
       github : 'https://github.com/parmiiida/Metaversus',
       image: '/metaversus.png',
       title: 'metaversus',
-      website:'https://metaversus-pi-six.vercel.app/',
+      website:'https://metaversus-2g4m.vercel.app/',
       description: 'created a modern UI/UX design website showcases my abilities in creating well-designed animated websites',
       techs: [
         "Next.js",
