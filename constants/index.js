@@ -28,11 +28,7 @@ export const exploreWorlds = [
   },
 ];
 
-export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading basmalah to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
-];
+
 
 export const newFeatures = [
   {
@@ -72,11 +68,11 @@ export const insights = [
 
 export const socials = [
 
-  {
-    name: 'linkedin',
-    url: '/linkedin.svg',
-    link:' https://www.linkedin.com/in/parmida-shoeibzadeh-11a109327/'
-  },
+  // {
+  //   name: 'linkedin',
+  //   url: '/linkedin.svg',
+  //   link:' https://www.linkedin.com/in/parmida-shoeibzadeh-11a109327/'
+  // },
   {
     name: 'github',
     url: '/github.png',
@@ -151,7 +147,7 @@ export const navItems = [
       github : 'https://github.com/parmiiida/Metaversus',
       image: '/metaversus.png',
       title: 'metaversus',
-      website:'https://metaversus-2g4m.vercel.app/',
+      website:'https://metaversus-8veu.vercel.app/',
       description: 'created a modern UI/UX design website showcases my abilities in creating well-designed animated websites',
       techs: [
         "Next.js",

@@ -29,12 +29,12 @@ const ProjectCard = () => (
                 </h4>
               </div>
               <div>
-                <p className="rounded-[3px] px-5 font-normal sm:text-[18px] text-[16px] sm:leading-[40px] leading-[27px] text-[#B0B0B0]">
+                <p className="rounded-[3px] sm:px-5 font-normal sm:text-[18px] text-[16px] sm:leading-[40px] leading-[27px]  text-[#B0B0B0]">
                   {project.description}
                 </p>
               </div>
               <div className="flex text-[#B0B0B0]">
-                <ul className="flex flex-1 text-[15px] mx-5 my-4 space-x-5">
+                <ul className="flex flex-1 text-[15px]  sm:mx-5 my-4 space-x-5">
                   {project.techs.map((tech, techIndex) => (
                     <li key={techIndex}>{tech}</li>
                   ))}
