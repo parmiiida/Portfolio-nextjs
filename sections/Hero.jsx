@@ -23,7 +23,7 @@ const Hero = () => (
 
         <motion.h1
         variants={textVariant(0.1)}
-        className={`${styles.heroHeading} h-[auto] `}>
+        className={`${styles.heroHeading} h-[auto] md:h-[90px]`}>
           Parmida shoeibzade.
         </motion.h1>
 

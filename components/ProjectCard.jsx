@@ -34,7 +34,7 @@ const ProjectCard = () => (
                 </p>
               </div>
               <div className="flex text-[#B0B0B0]">
-                <ul className="flex flex-1 text-[15px]  sm:mx-5 my-4 space-x-5">
+                <ul className="flex flex-1 text-[15px] ml-[-15px] sm:mx-5 my-4 space-x-5">
                   {project.techs.map((tech, techIndex) => (
                     <li key={techIndex}>{tech}</li>
                   ))}
